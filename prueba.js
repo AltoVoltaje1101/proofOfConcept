@@ -1,11 +1,9 @@
-
-import {fs} from 'fs'
-import {google} from 'googleapis'
+const fs = require('fs')
+const { google } = require('googleapis')
 async function uploadFile(){
 
 
 const GOOGLE_API_FOLDER_ID = '1lBDtamDiRJDK1EQRKQp0TDoKRYuAYUwr'
-    console.log("Si funciona")
     try{
         const auth = new google.auth.GoogleAuth({
             keyFile: 'googlekey.json',
