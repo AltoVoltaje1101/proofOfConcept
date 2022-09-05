@@ -16,13 +16,13 @@ const GOOGLE_API_FOLDER_ID = '1lBDtamDiRJDK1EQRKQp0TDoKRYuAYUwr'
         })
 
         const fileMetaData = {
-            'name': 'goku.jpg',
+            'name': 'archivo.txt',
             'parents': [GOOGLE_API_FOLDER_ID]
         }
 
         const media = {
-            mimeType: 'image/jpg',
-            body: fs.createReadStream('goku.jpg')
+            mimeType: 'text/txt',
+            body: fs.createReadStream('archivo.txt')
         }
 
         const response = await driveService.files.create({
